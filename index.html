@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Tarea 1 3er Trimestre</title>
+     <link rel="stylesheet" href="Damaris.css">
+</head>
+<body>
+<script text="text/javascript">
+    let a = String(prompt("ingrese su nombre de Usuario"));
+    let b = new Date(prompt("ingrese su fecha de Nacimiento (AA/MM/DD)"));
+    let c = String(prompt("ingrese su tipo de Sangre"));
+    let d = Number(prompt("ingrese su Altura (Pulgadas)(antes de los decimales inserte un punto no la coma)"));
+    let e = Number(prompt("ingrese su Peso (Kilogramos)(antes de los decimales inserte un punto no la coma)"));
+    let f = String(prompt("ingrese su Genero (masculino/femenino)"));
+    let hoy = new Date();
+
+    let ab = d * 2.54;
+    let zx = e * 2.2;
+    zx = zx.toFixed(2);
+    ab = ab.toFixed(2);
+    let jk = hoy.getFullYear() - b.getFullYear();
+    f = f.toLowerCase().trim();
+
+    if ( f == 'masculino') {
+        document.write('♂️ Masculino<br>');
+    }
+    else {
+        document.write('♀️ Femenino<br>');
+    }
+
+    document.write("________________________________________________________<br>");
+    document.write("Hola, Bienvenido " + a + ", tu tipo de sangre es " + c + ", tu altura es en " +ab+ " cm, <br> tu peso es de " +zx+ " en libras y actualemnte tienes " +jk+ " años de edad <br>");
+    document.write("________________________________________________________<br>");
+</script>
+<div><img src = "Skeleton.GIF"></div>
+</body>
+</html>

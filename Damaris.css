@@ -1,0 +1,13 @@
+body {
+    padding-top: 155px;
+    background: linear-gradient(45deg, #ffffff, rgb(118, 247, 193));
+    text-align: right;
+    color:#84a1df;
+    font-size: 24px;
+    font-family: 'Times New Roman';
+}
+div {
+    width: auto;
+    height: auto;
+    text-align: left;
+}
